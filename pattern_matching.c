@@ -82,6 +82,7 @@ void compile_result(const char* pattern, const char * text, bool expected){
     perror("SYNTAX_ERROR\n\n");
     return;
   }
-  printf("%s - %s | RESULT %s: ", pattern, text, matchResult ? "MATCHED!\n" : "UNMATCHED!\n"
+  printf(
+    "%s - %s | RESULT %s: ", pattern, text, matchResult ? "MATCHED!\n" : "UNMATCHED!\n"
   );
 }
